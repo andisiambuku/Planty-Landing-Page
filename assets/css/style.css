@@ -3,7 +3,7 @@
 
 /* VARIABLES CSS*/
 :root{
-   --header-height:3rem;
+   --header-height:5rem;
    /* Colours*/
    --first-color:#36802d ;
    --first-color-dark:#77ab59 ;
@@ -129,8 +129,11 @@ img{
 
 /*  Home  */
 .home{
-    background-color: var(--first-color);
+    
+   background-color: var(--first-color-darker);
+    
     overflow: hidden;
+    height: 100%;
 }
 
 .home_container{
@@ -138,12 +141,11 @@ img{
     grid-template-rows:repeat(2,max-content);
     row-gap:1.5rem;
 }
-
 .home_img{
-    position:relative;
+   
     padding-top:1.5rem;
     justify-self:center;
-    width:302px;
+    width:220px;
     height:220px;
 }
 
@@ -151,6 +153,10 @@ img{
     position:absolute; 
     top:0;
     right:0;
+}
+
+.l-main{
+    height: 100%;
 }
 
 .home_data{
@@ -161,10 +167,14 @@ img{
     font-size:var(--big-font-size);
     line-height:1.3rem;
     margin-bottom:1rem;
+    margin-top: 1 rem;
+    margin-right: 1 rem;
 }
 
 .home_desrciption{
     margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    margin-right: 1rem;
 }
 
 .home_button{
@@ -178,6 +188,8 @@ img{
 .home_button:hover{
 background-color: var(--first-color-darken);
 }
+
+
 
 /*  Media Queries*/
 @media screen and (min-width:768px){
@@ -232,7 +244,7 @@ background-color: var(--first-color-darken);
     }
 
     .home_container{
-        justify-content:initial;
+        justify-content:center;
         column-gap: 4.5rem;
     }
 
